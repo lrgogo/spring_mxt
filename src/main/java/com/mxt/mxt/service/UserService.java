@@ -36,7 +36,7 @@ public class UserService {
     }
 
     public TbUser getUser(Long id) {
-        TbUser user = userRepository.getOne(id);
+        TbUser user = userRepository.findOne(id);
         return user;
     }
 
